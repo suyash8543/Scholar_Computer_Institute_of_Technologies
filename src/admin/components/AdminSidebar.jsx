@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
     FaHome,
     FaBook,
@@ -7,24 +7,12 @@ import {
 } from "react-icons/fa";
 
 export default function AdminSidebar() {
+    const navigate = useNavigate();
 
-    const menu = [
-        {
-            title: "Dashboard",
-            icon: <FaHome />,
-            path: "/admin/dashboard"
-        },
-        {
-            title: "Manage Courses",
-            icon: <FaBook />,
-            path: "/admin/courses"
-        },
-        {
-            title: "Test Link",
-            icon: <FaLink />,
-            path: "/admin/test"
-        }
-    ];
+    const handleLogout = () => {
+        localStorage.removeItem("admin");
+        navigate("/");
+    };
 
     return (
 
@@ -32,7 +20,7 @@ export default function AdminSidebar() {
 
             <div className="admin-logo">
 
-                SCIT Admin
+                SCHOLAR Admin
 
             </div>
 
@@ -59,6 +47,11 @@ export default function AdminSidebar() {
                 Test Link
 
             </NavLink>
+
+            <button type="button" className="admin-logout-btn" onClick={handleLogout}>
+                <FaSignOutAlt />
+                Logout
+            </button>
 
         </div>
 
