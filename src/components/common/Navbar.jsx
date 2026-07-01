@@ -1,33 +1,63 @@
+import { useState } from "react";
+import { FaBars, FaTimes, FaUserShield } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaUserShield } from "react-icons/fa";
+import scholarLogo from "../../assets/logo.png";
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <>
             <nav className="navbar">
 
                 <div className="container navbar-container">
 
-                    <h1 className="logo">
-                        Scholar Institute
-                    </h1>
+                    <div className="logo-container">
 
-                    <div className="nav-links">
+                        <img
+                            src={scholarLogo}
+                            alt="Scholar Computer Institute"
+                            className="navbar-logo"
+                        />
 
-                        <Link to="/">Home</Link>
+                        <h1 className="logo">
+                            <span className="scholar">SCHOLAR</span>{" "}
+                            Computer Institute of Technology
+                        </h1>
 
-                        <Link to="/about">About</Link>
+                    </div>
 
-                        <Link to="/courses">Courses</Link>
+                    {/* Mobile Menu Icon */}
+                    <div
+                        className="menu-icon"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                        {menuOpen ? <FaTimes /> : <FaBars />}
+                    </div>
 
-                        <Link to="/contact">Contact</Link>
+                    {/* Navigation Links */}
+                    <div className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-                        {/* Admin Login Icon */}
+                        <Link to="/" onClick={() => setMenuOpen(false)}>
+                            Home
+                        </Link>
+
+                        <Link to="/about" onClick={() => setMenuOpen(false)}>
+                            About
+                        </Link>
+
+                        <Link to="/courses" onClick={() => setMenuOpen(false)}>
+                            Courses
+                        </Link>
+
+                        <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                            Contact
+                        </Link>
 
                         <Link
                             to="/admin"
                             className="admin-icon"
                             title="Admin Login"
+                            onClick={() => setMenuOpen(false)}
                         >
                             <FaUserShield />
                         </Link>

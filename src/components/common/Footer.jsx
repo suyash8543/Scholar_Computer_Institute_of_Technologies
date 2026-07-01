@@ -57,7 +57,7 @@ function Footer() {
                     <div className="social-icons">
 
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/scholarcomputer/"
                             target="_blank"
                             rel="noreferrer"
                             className="instagram"
@@ -66,7 +66,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://youtube.com"
+                            href="https://www.youtube.com/@thetechnicalscholar"
                             target="_blank"
                             rel="noreferrer"
                             className="youtube"
@@ -75,7 +75,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://facebook.com"
+                            href="https://www.facebook.com/ScholarComputersRaebareli/"
                             target="_blank"
                             rel="noreferrer"
                             className="facebook"
@@ -120,15 +120,15 @@ function Footer() {
 
                     <h3>PROGRAMS</h3>
 
-                    <a href="/">CCC & O Level</a>
+                    <a href="/courses">CCC & O Level</a>
 
-                    <a href="/">Tally Prime + GST</a>
+                    <a href="/courses">Tally Prime + GST</a>
 
-                    <a href="/">Python Programming</a>
+                    <a href="/courses">Python Programming</a>
 
-                    <a href="/">Web Development</a>
+                    <a href="/courses">Web Development</a>
 
-                    <a href="/">Digital Marketing</a>
+                    <a href="/courses">Digital Marketing</a>
 
                 </div>
 

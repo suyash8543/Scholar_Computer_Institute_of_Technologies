@@ -1,7 +1,15 @@
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 
+
+
+import { useNavigate } from "react-router-dom";
+import studentImg from "../assets/1.jpg";
+import umeshSir from "../assets/umesh-sir.png";
+
+
 function About() {
+    const navigate = useNavigate();
     return (
         <>
             <Navbar />
@@ -32,16 +40,19 @@ function About() {
                             training programs for future professionals.
                         </p>
 
-                        <button className="about-btn">
+                        <button
+                            className="about-btn"
+                            onClick={() => navigate("/courses")}
+                        >
                             Explore Courses
                         </button>
 
                     </div>
 
-                    <div className="about-right">
+                    <div className="hero-image-card">
 
                         <img
-                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                            src={studentImg}
                             alt="Scholar Institute"
                         />
 
@@ -143,10 +154,7 @@ function About() {
                         <h2>🎯 Our Vision</h2>
 
                         <p>
-                            To become a world-class computer education institute
-                            through excellence in technical education,
-                            innovation, skill development and continuous
-                            improvement.
+                            “We Believe In Making Youth Skilful.”
                         </p>
 
                     </div>
@@ -189,7 +197,85 @@ function About() {
 
                 <div className="faculty-grid">
 
-                    <div className="faculty-card">
+                    <div
+                        className="faculty-card"
+                        style={{
+                            backgroundImage: `url(${umeshSir})`,
+                        }}
+                    >
+                        <div className="faculty-overlay">
+                            <h3>Mr. Umesh Srivastava</h3>
+
+                            <span className="faculty-role">
+                                Director | Ex-IBM Employee
+                            </span>
+
+                            <p>
+                                <strong>Qualification:</strong> MCA
+                            </p>
+
+                            <p>
+                                Expertise: Python, C, C++, C#, Java,
+                                Data Analytics, Artificial Intelligence,
+                                Machine Learning, Robotics, HTML, CSS,
+                                JavaScript, PHP, .NET and more.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        className="faculty-card"
+                        style={{
+                            backgroundImage: `url(${umeshSir})`,
+                        }}
+                    >
+                        <div className="faculty-overlay">
+                            <h3>Mr. Umesh Srivastava</h3>
+
+                            <span className="faculty-role">
+                                Director | Ex-IBM Employee
+                            </span>
+
+                            <p>
+                                <strong>Qualification:</strong> MCA
+                            </p>
+
+                            <p>
+                                Expertise: Python, C, C++, C#, Java,
+                                Data Analytics, Artificial Intelligence,
+                                Machine Learning, Robotics, HTML, CSS,
+                                JavaScript, PHP, .NET and more.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        className="faculty-card"
+                        style={{
+                            backgroundImage: `url(${umeshSir})`,
+                        }}
+                    >
+                        <div className="faculty-overlay">
+                            <h3>Mrs. Priya Shukla</h3>
+
+                            <span className="faculty-role">
+                                Center Manager
+                            </span>
+
+                            <p>
+                                <strong>Qualification:</strong>
+                                D.EL.Ed, MA (English), PGDCA
+                            </p>
+
+                            <p>
+                                Expertise: Graphic Design, UI/UX Design,
+                                Adobe Illustrator, CorelDRAW, Canva and
+                                Creative Design Tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* <div className="faculty-card">
 
                         <div className="faculty-avatar">
                             👨‍🏫
@@ -262,7 +348,7 @@ function About() {
                             GST and Business Management.
                         </p>
 
-                    </div>
+                    </div> */}
 
                 </div>
 

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import studentImg from "../../assets/1.jpg";
 function Hero() {
 
     const navigate = useNavigate();
@@ -60,7 +60,7 @@ function Hero() {
                         </button>
 
                         <button className="hero-secondary">
-                            📞 +91 9876543210
+                            📞 +91 80040 36061
                         </button>
 
                     </div>
@@ -73,10 +73,7 @@ function Hero() {
 
                     <div className="hero-image-card">
 
-                        <img
-                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-                            alt="Students"
-                        />
+                        <img src={studentImg} alt="Students" />
 
                     </div>
 

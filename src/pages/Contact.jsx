@@ -1,5 +1,13 @@
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
+import {
+    FaInstagram,
+    FaYoutube,
+    FaFacebookF,
+    FaLinkedinIn,
+    FaPhoneAlt,
+    FaMapMarkerAlt,
+} from "react-icons/fa";
 
 function Contact() {
     return (
@@ -92,19 +100,43 @@ function Contact() {
                                     </p>
                                 </div>
 
-                                <div className="contact-social">
+                                <div className="social-icons">
 
-                                    <div className="social-icon">
-                                        f
-                                    </div>
+                                    <a
+                                        href="https://www.instagram.com/scholarcomputer/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="instagram"
+                                    >
+                                        <FaInstagram />
+                                    </a>
 
-                                    <div className="social-icon">
-                                        in
-                                    </div>
+                                    <a
+                                        href="https://www.youtube.com/@thetechnicalscholar"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="youtube"
+                                    >
+                                        <FaYoutube />
+                                    </a>
 
-                                    <div className="social-icon">
-                                        ig
-                                    </div>
+                                    <a
+                                        href="https://www.facebook.com/ScholarComputersRaebareli/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="facebook"
+                                    >
+                                        <FaFacebookF />
+                                    </a>
+
+                                    <a
+                                        href="https://linkedin.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="linkedin"
+                                    >
+                                        <FaLinkedinIn />
+                                    </a>
 
                                 </div>
 

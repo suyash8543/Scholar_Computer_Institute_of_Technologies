@@ -1,6 +1,6 @@
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-
+import { useNavigate } from "react-router-dom";
 import {
     FaLaptopCode,
     FaPython,
@@ -19,6 +19,7 @@ import {
 } from "react-icons/cg";
 
 function Courses() {
+    const navigate = useNavigate();
 
     const courses = [
 
@@ -165,7 +166,10 @@ function Courses() {
 
                         </div>
 
-                        <button>
+                        <button
+                            className="about-btn"
+                            onClick={() => navigate("/contact")}
+                        >
                             Enquire Now
                         </button>
 
@@ -210,9 +214,7 @@ function Courses() {
                                         {course.description}
                                     </p>
 
-                                    <button>
-                                        View Details
-                                    </button>
+                                   
 
                                 </div>
 

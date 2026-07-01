@@ -1,80 +1,143 @@
-import {
-    FaBook,
-    FaClipboardList,
-    FaUsers,
-    FaEnvelope
-} from "react-icons/fa";
+import { useEffect, useState } from "react";
+import DashboardCard from "../components/DashboardCard";
+import { FaBook, FaEnvelope } from "react-icons/fa";
+import api from "../../api/api";
 
-function Dashboard() {
-    const stats = [
-        {
-            title: "Courses",
-            value: 12,
-            icon: <FaBook />,
-        },
-        {
-            title: "Tests",
-            value: 3,
-            icon: <FaClipboardList />,
-        },
-        {
-            title: "Students",
-            value: "250+",
-            icon: <FaUsers />,
-        },
-        {
-            title: "Enquiries",
-            value: 18,
-            icon: <FaEnvelope />,
-        },
-    ];
+export default function Dashboard() {
+
+    const [loading, setLoading] = useState(true);
+
+    const [dashboard, setDashboard] = useState({
+        totalCourses: 0,
+        totalContacts: 0,
+        recentContacts: []
+    });
+
+    useEffect(() => {
+        fetchDashboard();
+    }, []);
+
+    const fetchDashboard = async () => {
+        try {
+
+            const res = await api.get("/dashboard");
+
+            setDashboard(res.data);
+
+        } catch (error) {
+
+            console.error(error);
+
+        } finally {
+
+            setLoading(false);
+
+        }
+    };
+
+    if (loading) {
+
+        return (
+            <div className="text-center mt-5">
+                <h4>Loading Dashboard...</h4>
+            </div>
+        );
+
+    }
 
     return (
         <div>
 
-            <div className="dashboard-header">
+            <h2 className="mb-4">Dashboard</h2>
 
-                <h1>Dashboard</h1>
+            <div className="row g-4">
 
-                <button className="primary-btn">
-                    + Add Course
-                </button>
+                <div className="col-md-6">
+
+                    <DashboardCard
+                        title="Total Courses"
+                        value={dashboard.totalCourses}
+                        icon={<FaBook />}
+                        color="#0d6efd"
+                    />
+
+                </div>
+
+                <div className="col-md-6">
+
+                    <DashboardCard
+                        title="Total Contacts"
+                        value={dashboard.totalContacts}
+                        icon={<FaEnvelope />}
+                        color="#198754"
+                    />
+
+                </div>
 
             </div>
 
-            <div className="stats-grid">
+            <div className="card table-card shadow-sm mt-5">
 
-                {stats.map((item, index) => (
-                    <div className="stat-card" key={index}>
+                <div className="card-header bg-primary text-white">
 
-                        <div className="stat-icon">
-                            {item.icon}
-                        </div>
+                    Recent Contact Requests
 
-                        <h2>{item.value}</h2>
+                </div>
 
-                        <p>{item.title}</p>
+                <div className="card-body p-0">
 
-                    </div>
-                ))}
+                    <table className="table table-hover mb-0">
 
-            </div>
+                        <thead>
 
-            <div className="activity-card">
+                            <tr>
 
-                <h3>Recent Activity</h3>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
 
-                <ul>
-                    <li>Course "Python" Added</li>
-                    <li>CCC Test Updated</li>
-                    <li>New Contact Enquiry</li>
-                    <li>Offer Bar Changed</li>
-                </ul>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            {dashboard.recentContacts.length > 0 ? (
+
+                                dashboard.recentContacts.map(contact => (
+
+                                    <tr key={contact.id}>
+
+                                        <td>{contact.name}</td>
+                                        <td>{contact.phone}</td>
+                                        <td>{contact.email}</td>
+
+                                    </tr>
+
+                                ))
+
+                            ) : (
+
+                                <tr>
+
+                                    <td colSpan="3" className="text-center">
+
+                                        No Contact Requests
+
+                                    </td>
+
+                                </tr>
+
+                            )}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </div>
 
         </div>
     );
 }
-
-export default Dashboard;

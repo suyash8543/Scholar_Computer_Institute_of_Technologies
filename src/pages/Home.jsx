@@ -7,33 +7,36 @@ import Hero from "../components/home/Hero";
 import Features from "../components/home/Features";
 import CoursesPreview from "../components/home/CoursesPreview";
 import Testimonials from "../components/home/Testimonials";
-
 import BonusCourses from "../components/home/BonusCourses";
 
+import api from "../api/api";
 
 function Home() {
 
-    const [showPopup, setShowPopup] = useState(false);
+    const [showPopup, setShowPopup] = useState(true);
+
+    const [scholarshipLink, setScholarshipLink] = useState("");
 
     useEffect(() => {
-
-        const timer = setTimeout(() => {
-            setShowPopup(true);
-        }, 1000);
-
-        return () => clearTimeout(timer);
-
+        fetchScholarshipLink();
     }, []);
+
+    const fetchScholarshipLink = async () => {
+        try {
+            const res = await api.get("/settings/testlink");
+            setScholarshipLink(res.data.value);
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     return (
         <>
-
             <Navbar />
 
             {/* SCHOLARSHIP POPUP */}
 
             {showPopup && (
-
                 <div className="popup-overlay">
 
                     <div className="scholarship-popup">
@@ -54,8 +57,8 @@ function Home() {
                         </h2>
 
                         <p>
-                            Appear in Scholar Institute Scholarship Test
-                            and get fee discounts based on your marks.
+                            Appear in Scholar Institute Scholarship Test and get
+                            fee discounts based on your marks.
                         </p>
 
                         <div className="scholarship-marks">
@@ -77,7 +80,16 @@ function Home() {
 
                         </div>
 
-                        <button className="apply-btn">
+                        <button
+                            className="apply-btn"
+                            onClick={() => {
+                                if (scholarshipLink && scholarshipLink.trim() !== "") {
+                                    window.open(scholarshipLink, "_blank");
+                                } else {
+                                    alert("Scholarship test is not available yet.");
+                                }
+                            }}
+                        >
                             Apply Now
                         </button>
 
@@ -95,8 +107,6 @@ function Home() {
             <CoursesPreview />
 
             <Testimonials />
-
-            
 
             <BonusCourses />
 

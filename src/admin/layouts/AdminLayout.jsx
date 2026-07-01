@@ -1,65 +1,25 @@
-import { Outlet, NavLink } from "react-router-dom";
-import {
-    FaTachometerAlt,
-    FaBook,
-    FaClipboardList,
-    FaCog,
-    FaSignOutAlt
-} from "react-icons/fa";
+import { Outlet } from "react-router-dom";
+import AdminSidebar from "../components/AdminSidebar";
+import AdminNavbar from "../components/AdminNavbar";
 
-function AdminLayout() {
-    return (
-        <div className="admin-layout">
+export default function AdminLayout(){
 
-            <aside className="admin-sidebar">
+    return(
 
-                <div className="admin-logo">
-                    Scholar Admin
-                </div>
+        <>
 
-                <nav>
+        <AdminSidebar/>
 
-                    <NavLink
-                        to="/admin/dashboard"
-                        className="sidebar-link"
-                    >
-                        <FaTachometerAlt />
-                        Dashboard
-                    </NavLink>
+        <div className="admin-content">
 
-                    <NavLink
-                        to="/admin/courses"
-                        className="sidebar-link"
-                    >
-                        <FaBook />
-                        Courses
-                    </NavLink>
+            <AdminNavbar/>
 
-                    <NavLink
-                        to="/admin/tests"
-                        className="sidebar-link"
-                    >
-                        <FaClipboardList />
-                        Online Tests
-                    </NavLink>
-
-                    
-
-                </nav>
-
-                <button className="logout-btn">
-                    <FaSignOutAlt />
-                    Logout
-                </button>
-
-            </aside>
-
-            <main className="admin-main">
-                <Outlet />
-            </main>
+            <Outlet/>
 
         </div>
-    );
-}
 
-export default AdminLayout;
+        </>
+
+    )
+
+}
