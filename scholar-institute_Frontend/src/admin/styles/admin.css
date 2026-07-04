@@ -1,0 +1,225 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    overflow-x:hidden;
+}
+
+.admin-navbar{
+    margin-bottom:30px;
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.admin-sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    height:100vh;
+    background:#1e293b;
+    color:#fff;
+    transition:left .3s ease;
+    z-index:1000;
+    overflow-y:auto;
+}
+
+.admin-sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.admin-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.18);
+    border-radius: 20px;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.24);
+}
+
+.admin-logo{
+    padding:22px;
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.admin-sidebar a,
+.admin-logout-btn{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    width:100%;
+    padding:15px 22px;
+    border:none;
+    background:none;
+    color:#cbd5e1;
+    text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.admin-sidebar a:hover,
+.admin-sidebar a.active,
+.admin-logout-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.admin-content{
+    flex:1;
+    margin-left:250px;
+    min-height:100vh;
+    padding:30px;
+    transition:margin-left .3s ease;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+
+.admin-menu-btn{
+    display:none;
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    z-index:1101;
+}
+
+/* ==========================
+   OVERLAY
+========================== */
+
+.sidebar-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:999;
+}
+
+/* ==========================
+   MOBILE & TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .admin-menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .admin-sidebar{
+        left:-250px;
+    }
+
+    .admin-sidebar.active{
+        left:0;
+    }
+
+    .admin-content{
+        margin-left:0;
+        padding:90px 15px 20px;
+    }
+
+    .sidebar-overlay{
+        display:block;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:993px){
+
+    .sidebar-overlay{
+        display:none !important;
+    }
+}
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+.dashboard-card{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    margin-bottom:25px;
+    
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:30px;
+}
+
+.table-card{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.table thead{
+    background:#2563eb;
+    color:#fff;
+}
+
+.table tbody tr:hover{
+    background:#eef4ff;
+}
+
+@media(max-width:576px){
+
+    .admin-content{
+        padding:85px 10px 20px;
+    }
+
+    .card-icon{
+        width:60px;
+        height:60px;
+        font-size:24px;
+    }
+}
+
