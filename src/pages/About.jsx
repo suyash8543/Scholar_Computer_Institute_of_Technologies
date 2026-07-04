@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import studentImg from "../assets/1.jpg";
 import umeshSir from "../assets/umesh-sir.png";
 import priya from "../assets/priya.jpeg";
-import Sir2 from "../assets/Sir2.jpeg";
+import sir2 from "../assets/Sir2.jpeg";
 
 
 function About() {
@@ -228,7 +228,7 @@ function About() {
                     <div
                         className="faculty-card"
                         style={{
-                            backgroundImage: `url(${Sir2})`,
+                            backgroundImage: `url(${sir2})`,
                         }}
                     >
                         <div className="faculty-overlay">
