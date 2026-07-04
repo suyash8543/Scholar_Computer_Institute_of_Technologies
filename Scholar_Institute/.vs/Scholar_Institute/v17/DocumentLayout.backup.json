@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\law project using html\\Scholar_Institute\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\scholar_institute.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:scholar_institute.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\scholar_institute.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:scholar_institute.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|d:\\law project using html\\scholar_institute\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CD0A5CF-AECD-48CD-A70F-EC7566828813}|Scholar_Institute.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T15:33:13.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T23:21:30.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T23:17:23.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingsController.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Controllers\\SettingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SettingsController.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Controllers\\SettingsController.cs",
+              "RelativeToolTip": "Controllers\\SettingsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T19:11:08.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T23:16:10.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-30T19:30:32.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T19:33:30.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Models\\Setting.cs",
+              "RelativeDocumentMoniker": "Models\\Setting.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Models\\Setting.cs",
+              "RelativeToolTip": "Models\\Setting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T15:26:41.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Models\\Contact.cs",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Models\\Contact.cs",
+              "RelativeToolTip": "Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T19:11:39.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Scholar_Institute.csproj",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Scholar_Institute.csproj",
+              "RelativeDocumentMoniker": "Scholar_Institute.csproj",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Scholar_Institute.csproj",
+              "RelativeToolTip": "Scholar_Institute.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T19:39:06.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Scholar_Institute",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\Scholar_Institute.csproj",
+              "RelativeDocumentMoniker": "Scholar_Institute.csproj",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\Scholar_Institute.csproj",
+              "RelativeToolTip": "Scholar_Institute.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T19:13:47.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\law project using html\\Scholar_Institute\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\law project using html\\Scholar_Institute\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-26T16:20:13.818Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

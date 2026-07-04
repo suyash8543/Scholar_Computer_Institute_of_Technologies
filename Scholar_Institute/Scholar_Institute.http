@@ -1,0 +1,6 @@
+@Scholar_Institute_HostAddress = http://localhost:5001
+
+GET {{Scholar_Institute_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
