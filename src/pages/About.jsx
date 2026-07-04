@@ -6,6 +6,8 @@ import Footer from "../components/common/Footer";
 import { useNavigate } from "react-router-dom";
 import studentImg from "../assets/1.jpg";
 import umeshSir from "../assets/umesh-sir.png";
+import priya from "../assets/priya.jpeg";
+import Sir2 from "../assets/sir2.jpeg";
 
 
 function About() {
@@ -226,25 +228,22 @@ function About() {
                     <div
                         className="faculty-card"
                         style={{
-                            backgroundImage: `url(${umeshSir})`,
+                            backgroundImage: `url(${Sir2})`,
                         }}
                     >
                         <div className="faculty-overlay">
-                            <h3>Mr. Umesh Srivastava</h3>
+                            <h3>Mr. SHIVESH  TRIPATHI</h3>
 
                             <span className="faculty-role">
-                                Director | Ex-IBM Employee
+                                Finance Faculty
                             </span>
 
                             <p>
-                                <strong>Qualification:</strong> MCA
+                                <strong>Qualification:</strong>MBA - Finance & HR
                             </p>
 
                             <p>
-                                Expertise: Python, C, C++, C#, Java,
-                                Data Analytics, Artificial Intelligence,
-                                Machine Learning, Robotics, HTML, CSS,
-                                JavaScript, PHP, .NET and more.
+                                SAP FICO, TALLY PRIME with AI, Advance Excel.
                             </p>
                         </div>
                     </div>
@@ -252,7 +251,7 @@ function About() {
                     <div
                         className="faculty-card"
                         style={{
-                            backgroundImage: `url(${umeshSir})`,
+                            backgroundImage: `url(${priya})`,
                         }}
                     >
                         <div className="faculty-overlay">

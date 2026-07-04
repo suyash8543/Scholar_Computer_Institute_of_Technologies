@@ -1,25 +1,43 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+
 import AdminSidebar from "../components/AdminSidebar";
 import AdminNavbar from "../components/AdminNavbar";
 
-export default function AdminLayout(){
+export default function AdminLayout() {
+    const [open, setOpen] = useState(false);
 
-    return(
+    return (
+        <div className="admin-layout">
 
-        <>
+            {/* Mobile Menu Button */}
+            <button
+                className="admin-menu-btn"
+                onClick={() => setOpen(!open)}
+            >
+                <FaBars />
+            </button>
 
-        <AdminSidebar/>
+            {/* Overlay */}
+            {open && (
+                <div
+                    className="sidebar-overlay"
+                    onClick={() => setOpen(false)}
+                ></div>
+            )}
 
-        <div className="admin-content">
+            {/* Sidebar */}
+            <AdminSidebar open={open} setOpen={setOpen} />
 
-            <AdminNavbar/>
-
-            <Outlet/>
+            {/* Main Content */}
+            <div className="admin-content">
+                <AdminNavbar />
+                <div className="admin-page">
+                    <Outlet />
+                </div>
+            </div>
 
         </div>
-
-        </>
-
-    )
-
+    );
 }

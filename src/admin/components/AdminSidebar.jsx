@@ -6,7 +6,7 @@ import {
     FaSignOutAlt
 } from "react-icons/fa";
 
-export default function AdminSidebar() {
+export default function AdminSidebar({ open, setOpen }) {
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -16,7 +16,7 @@ export default function AdminSidebar() {
 
     return (
 
-        <div className="admin-sidebar">
+        <div className={`admin-sidebar ${open ? "active" : ""}`}>
 
             <div className="admin-logo">
 
@@ -24,7 +24,10 @@ export default function AdminSidebar() {
 
             </div>
 
-            <NavLink to="/admin/dashboard">
+            <NavLink
+                to="/admin/dashboard"
+                onClick={() => setOpen(false)}
+            >
 
                 <FaHome />
 
@@ -32,7 +35,10 @@ export default function AdminSidebar() {
 
             </NavLink>
 
-            <NavLink to="/admin/courses">
+            <NavLink
+                to="/admin/courses"
+                onClick={() => setOpen(false)}
+            >
 
                 <FaBook />
 
@@ -40,7 +46,10 @@ export default function AdminSidebar() {
 
             </NavLink>
 
-            <NavLink to="/admin/test">
+            <NavLink
+                to="/admin/test"
+                onClick={() => setOpen(false)}
+            >
 
                 <FaLink />
 

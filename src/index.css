@@ -35,7 +35,7 @@ html,body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 1000;
   background: rgba(2, 6, 23, 0.92);
   backdrop-filter: blur(12px);
@@ -55,6 +55,7 @@ html,body {
     display:flex;
     align-items:center;
     gap:12px;
+    flex:1;
 }
 
 .navbar-logo{
@@ -65,11 +66,10 @@ html,body {
 }
 
 .logo{
-    margin:0;
-    font-size:2rem;
-    font-weight:300;
+    flex:1;
+    font-size:16px;
+    line-height:1.3;
 }
-
 .scholar{
     color:#2d8cff;
     font-weight: 700;
@@ -249,7 +249,7 @@ html,body {
 .premium-hero {
   position: relative;
 
-  min-height: 100vh;
+  min-height: 130vh;
 
   background:
     linear-gradient(to right,
@@ -259,7 +259,7 @@ html,body {
   overflow: hidden;
 
   padding:
-    150px 0 50px;
+    180px 0 50px;
 
   display: flex;
 
@@ -844,7 +844,7 @@ html,body {
 
 /* ================= COURSES ================= */
 .modern-courses {
-  padding: 140px 0;
+  padding: 180px 0;
 
   background:
     linear-gradient(to right,
@@ -1229,7 +1229,7 @@ html,body {
 
 
 .popular-courses-section {
-  padding: 120px 0;
+  padding: 180px 0;
   background:
     linear-gradient(to right,
       #020617,
@@ -1881,7 +1881,7 @@ html,body {
 .about-page {
   background: #020617;
   color: #fff;
-  padding: 80px 5%;
+  padding: 180px 5% 80px
 }
 
 .about-hero {
@@ -2464,7 +2464,7 @@ html,body {
       rgba(2, 6, 23, 0.95),
       rgba(15, 23, 42, 0.95));
 
-  padding-top: 140px;
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 
@@ -2747,7 +2747,7 @@ html,body {
       #f59e0b);
 
   position: fixed;
-  top: 80px;
+  top: 100px;
   /* navbar height */
   left: 0;
 
@@ -2798,7 +2798,7 @@ html,body {
 
    .offer-bar{
     position: fixed;
-    top: 140px;   /* move below navbar */
+    top: 160px;   /* move below navbar */
     left: 0;
     width: 100%;
     z-index: 999;
@@ -2818,8 +2818,8 @@ html,body {
 @media (max-width: 480px) {
 
   .offer-bar {
-    height: 40px;
-    top: 70px;
+    height: 30px;
+    top: 100px;
   }
 
   .offer-track {
@@ -3151,56 +3151,6 @@ html,body {
   margin-bottom: 50px;
 }
 
-.sidebar-link {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-
-  padding: 15px 18px;
-  margin-bottom: 12px;
-
-  border-radius: 14px;
-
-  color: #94a3b8;
-  text-decoration: none;
-
-  transition: .3s;
-}
-
-.sidebar-link:hover {
-  background: #0f172a;
-  color: white;
-}
-
-.sidebar-link.active {
-  background: #2563eb;
-  color: white;
-}
-
-.admin-main {
-  flex: 1;
-  padding: 40px;
-  overflow: auto;
-}
-
-.logout-btn {
-  margin-top: auto;
-
-  background: #ef4444;
-  color: white;
-
-  border: none;
-  border-radius: 12px;
-
-  padding: 14px;
-
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
