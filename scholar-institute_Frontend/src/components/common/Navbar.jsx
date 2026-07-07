@@ -20,8 +20,7 @@ function Navbar() {
                         />
 
                         <h1 className="logo">
-                            <span className="scholar">SCHOLAR</span>{" "}
-                            Computer Institute of Technology
+                            SCHOLAR Computer Institute of Technologies
                         </h1>
 
                     </div>
