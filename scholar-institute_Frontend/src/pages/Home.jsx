@@ -83,6 +83,7 @@ function Home() {
                         <button
                             className="apply-btn"
                             onClick={() => {
+                                console.log("Scholarship Link:", scholarshipLink);
                                 if (scholarshipLink && scholarshipLink.trim() !== "") {
                                     window.open(scholarshipLink, "_blank");
                                 } else {
