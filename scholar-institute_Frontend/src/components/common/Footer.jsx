@@ -31,7 +31,7 @@ function Footer() {
                         <div>
 
                             <h2>
-                                Scholar Computer Institute
+                                 SCHOLAR Computer Institute of Technologies
                             </h2>
 
                             <span>
